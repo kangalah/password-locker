@@ -48,9 +48,9 @@ class Credentials(Users):
         self.password = password
 
     def save_cred(self):
-        Credentials.credentials_info.append(self)
+        Credentials.Credentials_info.append(self)
     
-    def password_gen(size):
+    def password_gen(self,size):
         """
         generate a random string of letters and digits
         """
@@ -63,7 +63,7 @@ class Credentials(Users):
         """
         shows the saved credentials
         """
-        for cred in cls.credentials_info:
+        for cred in cls.Credentials_info:
             if cred.username == username:
                 cls.user_cred_info.append(cred)
 
@@ -74,13 +74,13 @@ class Credentials(Users):
         """
         finds the platform's credentials
         """
-        for cred in cls.credentials_info:
+        for cred in cls.Credentials_info:
             if cred.platform == platform:
                 return cred
 
     @classmethod
     def del_cred(cls,cred):
-        for credential in cls.credentials_info:
+        for credential in cls.Credentials_info:
             if credential == cred:
                 del credential
                 return "Deleted"
