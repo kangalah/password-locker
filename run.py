@@ -53,20 +53,20 @@ def main():
         print("Please use the following short codes to interact with this application app\n li - Login\n cu - Register\n lo - Logout")
         user_input = input("Enter input here: ")
 
-        if user_input == 'cu'
-        print("You have selected to register.Please enter your registration details below")
-        fname = input("Enter your first name: ")
-        lname = input("Enter your last name: ")
-        password = input("Enter your desired password: ")
-        register_user(create_user(fname, lname, password))
-        print(f"Your account is registered as follows: First name:{fname}Last name:{lname}password:{password}is your password")
+        if user_input =='cu':
+            print("You have selected to register.Please enter your registration details below")
+            fname = input("Enter your first name: ")
+            lname = input("Enter your last name: ")
+            password = input("Enter your desired password: ")
+            register_user(create_user(fname, lname, password))
+            print(f"Your account is registered as follows: First name:{fname}Last name:{lname}password:{password}is your password")
 
         elif user_input == 'li':
             print("Enter your first name and password to log in to your account\n")
             username = input("Enter your username here: ")
             password = input("Enter your password here: ")
-            if user_check(username,password == username:)
-            print(f"Welcome{username}. Your login was successful")
+            if user_check(username,password == username:
+                print(f"Welcome{username}. Your login was successful")
 
             while True:
                 print("********")
@@ -108,7 +108,7 @@ def main():
                 elif user_input == 'lo'
                 print("Thank you for using the password-locker")
                 break
-            
+
             else:
                 print("Wrong Input! kindly choose again")
 
