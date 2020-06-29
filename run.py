@@ -65,8 +65,8 @@ def main():
             print("Enter your first name and password to log in to your account\n")
             username = input("Enter your username here: ")
             password = input("Enter your password here: ")
-            if user_check(username,password == username:
-                print(f"Welcome{username}. Your login was successful")
+            if user_check(username,password == username;
+            print(f"Welcome{username}. Your login was successful")
 
             while True:
                 print("********")
@@ -74,7 +74,7 @@ def main():
                 user_input = input("cc - save new credentials\n ccp - Create new credentials with generated pasword\n dc - display credentials\n del - Delete credentials\n ex - Exit")
 
 
-            if user_input == 'cc':
+        if user_input == 'cc':
             print("Enter the account details that you want to save below")
             username = input("Enter your username: ")
             platform = input("Enter your platform: ")
