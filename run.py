@@ -108,6 +108,7 @@ def main():
                 elif user_input == 'lo'
                 print("Thank you for using the password-locker")
                 break
+            
             else:
                 print("Wrong Input! kindly choose again")
 
