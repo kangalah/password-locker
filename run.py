@@ -65,8 +65,9 @@ def main():
             print("Enter your first name and password to log in to your account\n")
             username = input("Enter your username here: ")
             password = input("Enter your password here: ")
-            if user_check(username,password == username;
-            print(f"Welcome{username}. Your login was successful")
+
+            if user_check(username, password) == username:
+                print(f"welcome{username}.Your login is successful")
 
             while True:
                 print("********")
@@ -82,35 +83,35 @@ def main():
             create_cred(fname,username,platform,password)
             print(f"Your credentials for site: {platform}, with {username} and password:{password} has been saved!")
 
-            elif user_input == 'ccp':
-                print("Enter the account details you want saved below")
-                username = input("Enter your username: ")
-                platform = input("Enter the platform: ")
-                len = input("Enter the length of your desired password(Numbers only): ")
-                password = password_gen(int(len))
-                create_cred(fname,username,platform,password)
-                print(f"Your credentials for account: {platform}, with username: {uername} and password:{password} have been saved!")
+        elif user_name == 'ccp':
+            print("Enter the account details you want saved below")
+            username = input("Enter your username: ")
+            platform = input("Enter the platform: ")
+            len = input("Enter the length of your desired password(Numbers only): ")
+            password = password_gen(int(len))
+            create_cred(fname,username,platform,password)
+            print(f"Your credentials for account: {platform}, with username: {username} and password:{password} have been saved!")
 
-                elif user_input == 'dc':
+        elif user_input == 'dc':
                     print("Your saved credentials are as below")
                     show_cred(username)
 
-                elif user_input == 'del':
+        elif user_input == 'del':
                     print("Enter the account name and username whose credentials you want to delete below")
                     platform = input("Enter the name of the account here e.g instagram: ")
                     username = input("Enter your username here: ")
                     show_cred(username)
                     print("Your credentials have been deleted successfully!")
 
-                if user_input == 'ex':
-                    print(Goodbye {username}!)
-                    break
-                elif user_input == 'lo'
+        if user_input == 'ex':
+            print("Goodbye!")
+            break
+        elif user_input == 'lo':
                 print("Thank you for using the password-locker")
                 break
 
-            else:
-                print("Wrong Input! kindly choose again")
+        else:
+            print("Wrong Input! kindly choose again")
 
 if __name__ == '__main__':
     main()
