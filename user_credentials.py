@@ -38,7 +38,7 @@ class Credentials(Users):
                 identity = cred.first
                 return identity
 
-    def __init__(self,name,username,platform,password):
+    def __init__(self,name,username,platform,password,size):
         """
         Initialize new credentials object
         """
@@ -46,6 +46,7 @@ class Credentials(Users):
         self.username = username
         self.platform = platform
         self.password = password
+        self.size = size
 
     def save_cred(self):
         Credentials.Credentials_info.append(self)

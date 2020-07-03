@@ -24,7 +24,7 @@ def create_cred(name,username,platform,password):
     '''
     Creates credentials to be saved
     '''
-    create_instance = Credentials(name,username,platform,password)
+    create_instance = Credentials(name,username,platform,password,size)
     return create_instance
 
 def save_cred(cred):
@@ -83,7 +83,7 @@ def main():
             create_cred(fname,username,platform,password)
             print(f"Your credentials for site: {platform}, with {username} and password:{password} has been saved!")
 
-        elif user_name == 'ccp':
+        elif username == 'ccp':
             print("Enter the account details you want saved below")
             username = input("Enter your username: ")
             platform = input("Enter the platform: ")
